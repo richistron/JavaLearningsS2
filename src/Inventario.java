@@ -1,4 +1,5 @@
 import Habitaciones.HabitacionDoble;
+import Habitaciones.HabitacionLujo;
 import Habitaciones.HabitacionSimple;
 import Habitaciones.IHabitacion;
 
@@ -15,7 +16,7 @@ public class Inventario {
         habitaciones.add(new HabitacionSimple(302, false));
         habitaciones.add(new HabitacionDoble(103, true));
         habitaciones.add(new HabitacionDoble(104, true));
-        habitaciones.add(new HabitacionDoble(999, false));
+        habitaciones.add(new HabitacionLujo(999, false));
     }
 
     public void invetarioCompleto() {
@@ -23,7 +24,7 @@ public class Inventario {
     }
 
     public void invetarioDisponible() {
-        imprimirInventario(habitaciones.stream().filter(h -> h.esDisponible()).collect(Collectors.toList()));
+        imprimirInventario(habitaciones.stream().filter(IHabitacion::esDisponible).collect(Collectors.toList()));
     }
 
     private void imprimirInventario(List<IHabitacion> habitaciones) {

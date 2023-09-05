@@ -4,7 +4,7 @@ public class HabitacionLujo extends HabitacionBase {
     public HabitacionLujo(int numeroHabitacion, boolean disponible) {
         numeroPersonas = 2;
         precioNoche = 1530.50;
-        tipoHabitacion = "Doble";
+        tipoHabitacion = "Lujo";
         amenidades.add("Jacuzzi");
         amenidades.add("Tele");
         amenidades.add("Mini bar");
