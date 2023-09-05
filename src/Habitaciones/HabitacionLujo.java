@@ -2,7 +2,7 @@ package Habitaciones;
 
 public class HabitacionLujo extends HabitacionBase {
     public HabitacionLujo(int numeroHabitacion, boolean disponible) {
-        numeroPersonas = 2;
+        numeroPersonas = 4;
         precioNoche = 1530.50;
         tipoHabitacion = "Lujo";
         amenidades.add("Jacuzzi");
